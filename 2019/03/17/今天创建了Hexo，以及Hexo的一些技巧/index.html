@@ -33,17 +33,17 @@
 <link rel="canonical" href="http://yoursite.com/2019/03/17/今天创建了Hexo，以及Hexo的一些技巧/">
 
 
-<meta name="description" content="######Hexo写完后需要的操作  hexo clean hexo g hexo s hexo d //上传到github   ######创建分类  hexo new page categories 为新建的 E:\HEXO\blog\source\categories 创建属性  12345title: 分类date: 2014-12-22 12:39:04type: &amp;quot;cate">
+<meta name="description" content="Hexo写完后需要的操作 hexo clean hexo g hexo s hexo d //上传到github   创建分类 hexo new page categories  为新建的 E:\HEXO\blog\source\categories 创建属性  12345title: 分类date: 2014-12-22 12:39:04type: &amp;quot;categories&amp;quot;c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="今天创建了Hexo，以及Hexo的一些技巧">
 <meta property="og:url" content="http://yoursite.com/2019/03/17/今天创建了Hexo，以及Hexo的一些技巧/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="######Hexo写完后需要的操作  hexo clean hexo g hexo s hexo d //上传到github   ######创建分类  hexo new page categories 为新建的 E:\HEXO\blog\source\categories 创建属性  12345title: 分类date: 2014-12-22 12:39:04type: &amp;quot;cate">
+<meta property="og:description" content="Hexo写完后需要的操作 hexo clean hexo g hexo s hexo d //上传到github   创建分类 hexo new page categories  为新建的 E:\HEXO\blog\source\categories 创建属性  12345title: 分类date: 2014-12-22 12:39:04type: &amp;quot;categories&amp;quot;c">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-17T07:32:41.316Z">
+<meta property="og:updated_time" content="2019-03-17T07:40:24.876Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="今天创建了Hexo，以及Hexo的一些技巧">
-<meta name="twitter:description" content="######Hexo写完后需要的操作  hexo clean hexo g hexo s hexo d //上传到github   ######创建分类  hexo new page categories 为新建的 E:\HEXO\blog\source\categories 创建属性  12345title: 分类date: 2014-12-22 12:39:04type: &amp;quot;cate">
+<meta name="twitter:description" content="Hexo写完后需要的操作 hexo clean hexo g hexo s hexo d //上传到github   创建分类 hexo new page categories  为新建的 E:\HEXO\blog\source\categories 创建属性  12345title: 分类date: 2014-12-22 12:39:04type: &amp;quot;categories&amp;quot;c">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
@@ -118,30 +118,29 @@
 
     
             <div class="post-content">
-            <p>######Hexo写完后需要的操作</p>
-<ol>
+            <h6 id="Hexo写完后需要的操作"><a href="#Hexo写完后需要的操作" class="headerlink" title="Hexo写完后需要的操作"></a>Hexo写完后需要的操作</h6><ol>
 <li><code>hexo clean</code></li>
 <li><code>hexo g</code></li>
 <li><code>hexo s</code></li>
 <li><code>hexo d</code> //上传到github</li>
 </ol>
 <hr>
-<p>######创建分类</p>
-<ol>
-<li><code>hexo new page categories</code></li>
+<h6 id="创建分类"><a href="#创建分类" class="headerlink" title="创建分类"></a>创建分类</h6><ol>
+<li><p><code>hexo new page categories</code></p>
+</li>
 <li><p>为新建的 E:\HEXO\blog\source\categories 创建属性</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2014-12-22 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在菜单中添加链接。编辑主题的 _config.yml ，将 menu 中的 categories: /categories 注释去掉，如下:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  			home: /</span><br><span class="line">  			categories: /categories</span><br><span class="line">  			archives: /archives</span><br><span class="line">  			tags: /tags</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 <ol start="4">
 <li>新创建个文章，里面添加categories  属性<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> ---</span><br><span class="line">title: hexo next 为文章添加分类</span><br><span class="line">date: 2016-03-16 08:12:43</span><br><span class="line">tags:</span><br><span class="line">categories: 前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-</li>
-</ol>
 <hr>
-<p> ######主题中首页出现tags如何去掉<br> 需要在主题的_config.yml和README.md想要的属性，同时设置true</p>
+<h6 id="主题中首页出现tags如何去掉"><a href="#主题中首页出现tags如何去掉" class="headerlink" title="主题中首页出现tags如何去掉"></a>主题中首页出现tags如何去掉</h6><p> 需要在主题的_config.yml和README.md想要的属性，同时设置true</p>
 
             </div>
           
