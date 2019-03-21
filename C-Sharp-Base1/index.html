@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>C Sharp基础知识1 | Hexo</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">C Sharp基础知识1</h1><a id="logo" href="/.">Hexo</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">C Sharp基础知识1</h1><div class="post-meta">Mar 21, 2019</div><div class="post-content"><blockquote>
+</blockquote>
+<p>C Sharp简单介绍和安装、变量和表达式、逻辑结构</p>
+<h3 id="一、初识C-Sharp"><a href="#一、初识C-Sharp" class="headerlink" title="一、初识C Sharp"></a>一、初识C Sharp</h3><p>简单介绍了下C Sharp，C Sharp的安装，UP主使用的是visual studio2010，安装时候选择自定义去除了Visual Basic、Visual C++、Visual F#和SQLServer 2008。</p>
+<h3 id="二、变量和表达式"><a href="#二、变量和表达式" class="headerlink" title="二、变量和表达式"></a>二、变量和表达式</h3><p>几个Visual Studio快捷键：shift+tab 、tab 、复制过来的代码乱只要删除后面的}再进行添加即可。</p>
+<p>注释:单行 多行 region和endregion</p>
+<p>数据类型：讲几个常用的，int、double、decimal、string、bool、char</p>
+<p>变量的命名：开头第一个字母必须是：字母、下划线、@符号中任意的一个，后面的字符可以是字母 下划线或者是数字，不可以以数字开头</p>
+<p>表达式：数学运算：一元++ –、二元+ - <em> / %、三元后续再讲<br>       赋值运算：= += -= /= </em>= %=</p>
+<h3 id="三、逻辑控制"><a href="#三、逻辑控制" class="headerlink" title="三、逻辑控制"></a>三、逻辑控制</h3><h4 id="3-1布尔逻辑"><a href="#3-1布尔逻辑" class="headerlink" title="3.1布尔逻辑"></a>3.1布尔逻辑</h4><p>字符串的比较：==、!=</p>
+<p>数值的比较:&gt; 、&gt;= 、&lt; 、&lt;= 、!= 、==</p>
+<p>布尔的比较：|| 、&amp;&amp;、!</p>
+<h4 id="3-2分支"><a href="#3-2分支" class="headerlink" title="3.2分支"></a>3.2分支</h4><p>三元：？</p>
+<p>if</p>
+<p>switch</p>
+<p>循环语句：do while、while、for</p>
+<p>循环中断：break、continue、return</p>
+<h3 id="四、变量的扩展"><a href="#四、变量的扩展" class="headerlink" title="四、变量的扩展"></a>四、变量的扩展</h3><h4 id="4-1类型转换"><a href="#4-1类型转换" class="headerlink" title="4.1类型转换"></a>4.1类型转换</h4><h5 id="4-1-1隐式转换"><a href="#4-1-1隐式转换" class="headerlink" title="4.1.1隐式转换"></a>4.1.1隐式转换</h5><p>系统自动转换：从小到大，int 到long、float、double、decimal。float转成double</p>
+<h5 id="4-1-1显式转换"><a href="#4-1-1显式转换" class="headerlink" title="4.1.1显式转换"></a>4.1.1显式转换</h5><p>Convert类</p>
+<p>Parse方法</p>
+<p>ToString方法</p>
+<h4 id="4-2枚举"><a href="#4-2枚举" class="headerlink" title="4.2枚举"></a>4.2枚举</h4><p><code>enum sex{男=0,女=1}</code></p>
+<p>enum<br>枚举是默认是int</p>
+<h4 id="4-3结构"><a href="#4-3结构" class="headerlink" title="4.3结构"></a>4.3结构</h4><p><code>struct Books{public string name;public int price}</code></p>
+<h4 id="4-4数组"><a href="#4-4数组" class="headerlink" title="4.4数组"></a>4.4数组</h4><p>数组的定义以及取值</p>
+<h4 id="4-5字符串的处理方法"><a href="#4-5字符串的处理方法" class="headerlink" title="4.5字符串的处理方法"></a>4.5字符串的处理方法</h4><p>ToLower</p>
+<p>ToUpper</p>
+<p>Trim</p>
+<p>PadLeft</p>
+<p>PadRight<br>Replace</p>
+<p>Remove</p>
+<p>Substring</p>
+<p>IndexOf</p>
+<p>Equals</p>
+<p>Contains</p>
+<p>EndsWith</p>
+<p>StartsWith</p>
+</div><div class="tags"></div><div class="post-nav"><a class="next" href="/HelloHexo/">今天创建了Hexo，以及Hexo的一些技巧</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://yoursite.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/C-Sharp-Base1/">C Sharp基础知识1</a></li><li class="post-list-item"><a class="post-list-link" href="/HelloHexo/">今天创建了Hexo，以及Hexo的一些技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">Hexo.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
